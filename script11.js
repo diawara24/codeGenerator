@@ -63,12 +63,14 @@ let createDiale = (i) => {
                     timerContent.style.color = 'white';
                 }
     
-                if (timer == 0) {
+                if (timer < 0) {
                     clearInterval(timerStart);
                     alert('Le temps est ecoulé');
                     code = createCode(3);
                     timer = 60;
                     timerContent.textContent = timer;
+                    timerContent.style.backgroundColor = 'none';
+                    timerContent.style.color = 'grren';
                 }
 
                
