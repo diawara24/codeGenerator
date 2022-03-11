@@ -69,8 +69,8 @@ let createDiale = (i) => {
                     code = createCode(3);
                     timer = 60;
                     timerContent.textContent = timer;
-                    timerContent.style.backgroundColor = 'none';
-                    timerContent.style.color = 'grren';
+                    timerContent.style.backgroundColor = '';
+                    timerContent.style.color = 'green';
                 }
 
                
