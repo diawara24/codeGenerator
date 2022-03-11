@@ -56,7 +56,7 @@ let createDiale = (i) => {
         if (timer == 60) {
             timerStart = setInterval(() => {
                 timerContent.textContent = timer;
-                timer--;
+               
                 if (timer < 30) {
                     timerContent.style.backgroundColor = 'red';
                     timerContent.style.opacity = '.9';
@@ -72,7 +72,7 @@ let createDiale = (i) => {
                     timerContent.style.backgroundColor = '';
                     timerContent.style.color = 'green';
                 }
-
+                timer--;
                
             }, 1000); 
         }
